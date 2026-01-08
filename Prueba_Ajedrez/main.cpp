@@ -1,6 +1,13 @@
 #include <iostream>
+#include "tablero.h"
+
+using namespace std;
 
 int main() {
+    char tablero[N][N];
 
-	return 0;
+    inicializarTablero(tablero);
+    mostrarTablero(tablero);
+
+    return 0;
 }
