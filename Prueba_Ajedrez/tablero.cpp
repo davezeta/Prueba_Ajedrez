@@ -12,14 +12,14 @@ void inicializarTablero(char tablero[N][N]) {
 }
 
 void mostrarTablero(char tablero[N][N]) {
-    cout << "\n   ";
+    cout << "   ";
     for (int col = 0; col < N; col++) {
         cout << col + 1 << " ";
     }
-    cout << "\n";
+    cout << endl;
 
     for (int fil = 0; fil < N; fil++) {
-        cout << fil + 1 << "  ";
+        cout << (N - fil) << "  ";
         for (int col = 0; col < N; col++) {
             cout << tablero[fil][col] << " ";
         }
